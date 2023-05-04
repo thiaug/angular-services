@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { TimerComponent } from './timer/timer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
+import { DisciplinasComponent } from './disciplinas/disciplinas.component';
 
 @NgModule({
   imports: [
@@ -14,9 +15,16 @@ import { RouterModule } from '@angular/router';
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'timer', component: TimerComponent },
+      { path: 'disciplinas', component: DisciplinasComponent },
     ]),
   ],
-  declarations: [RootComponent, HomeComponent, TimerComponent, NavbarComponent],
+  declarations: [
+    RootComponent,
+    HomeComponent,
+    TimerComponent,
+    NavbarComponent,
+    DisciplinasComponent,
+  ],
   bootstrap: [RootComponent],
 })
 export class AppModule {}
